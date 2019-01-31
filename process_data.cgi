@@ -15,7 +15,7 @@ my $query = CGI->new;
 
 my $result = FormValidator::Simple->check( $query => [
         ordName => ['NOT_BLANK', ['LENGTH', 1, 70]],
-	ordEmailAddress => ['NOT_BLANK', ['LENGTH', 1, 70]],
+	ordEmailAddress => ['NOT_BLANK','EMAIL_LOOSE'],
         invoice_num => ['NOT_BLANK', ['LENGTH', 1, 4]],
         amount  => ['NOT_BLANK', ['DECIMAL', 5, 2], ['LENGTH', 2, 8]],
     ] );
@@ -75,7 +75,7 @@ Content-Type: text/html; charset=iso-8859-1
                                                 <section>
                                                         <p><font color="red">Your submitted information has generated an error! Please verify the below requirements, then return to the <a href="http://payment.cgeb-imr.ca">Payment Info Page</a> to retry.
                                                         <p><b>Client Name: <font color="red">Must only be ASCII characters and not blank!</font></b>
-							<p><b>Client Email: <font color="red">Must only be ASCII characters and not blank!</font></b>
+							<p><b>Client Email: <font color="red">Must be well formed email and not blank!</font></b>
                                                         <p><b>Invoice Number: <font color="red">Numbers plus (optionally) one letter only, no spaces - up to four (4) characters are allowed!</font></b>
                                                         <p><b>Amount: <font color="red">Numbers only, no spaces - up to eight (8) characters are allowed, including the period (ie: 12345.67)!</font></b>
                                                         </p>
