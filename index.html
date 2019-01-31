@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CGEB-IMR Payment Page</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Information and access to services provided by the Dalhousie University Integrated Microbiome Resource" />
+		<meta name="keywords" content="microbiome, Dalhousie, Halifax, NGS, 16S, 18S, metagenomics, metatranscriptomics, MiSeq, Illumina" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="http://cgeb-imr.ca/index.html" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="http://cgeb-imr.ca/index.html">Home</a></li>
+							<li><a href="http://cgeb-imr.ca/about.html">About Us</a></li>
+							<li><a href="http://cgeb-imr.ca/achieve.html">Achievements</a></li>
+							<li><a href="http://cgeb-imr.ca/submissions.html">Submission Guidelines</a></li>
+							<li><a href="http://cgeb-imr.ca/queue.html">Real-Time Queue</a></li>
+							<li><a href="http://cgeb-imr.ca/pricing.html">Pricing</a></li>
+							<li><a href="http://cgeb-imr.ca/protocols.html">Protocols</a></li>
+							<li><a href="http://cgeb-imr.ca/contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2>Online Payments (Credit Card)</h2>
+						</header>
+						<section>
+							<p>To begin payment, enter your invoice details below and click <b>Submit</b> - you will then be asked to confirm your submitted data before continuing.
+							<p><i><font style="color:red">Note: Client name refers to the Bill To name on your invoice; enter only one invoice number per payment; and enter the total Canadian dollar amount below as written in your invoice, regardless of your local currency (conversion will take place via your credit card).</font></i>
+
+							<p><form action="process_data.cgi" method="post">
+								<b>Client Name: &nbsp;</b><input name="ordName" type="text" maxlength="70" size="70">
+								<br><br><b>Email: &nbsp;</b><input name="ordEmailAddress" type="text" maxlength="70" size="70">
+								<br><br><b>Invoice #: &nbsp;</b><input name="invoice_num" type="text" maxlength="4" size="10"> &nbsp;&nbsp;&nbsp;<b>Amount to pay (no commas): $&nbsp;<input name="amount" type="text" size="10" maxlength="8"> CAD</b>
+								<br><br><input value="Submit" type="submit">
+							</form>
+							</p>
+						</section>
+					</article>
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; IMR INC (2019+). All rights reserved.</li><li>Design template: <a href="http://html5up.net" target="new">HTML5 UP</a></li>
+									</ul>
+								</div>
+							
+			</div>
+
+	</body>
+</html>
