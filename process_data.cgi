@@ -49,19 +49,19 @@ Content-Type: text/html; charset=iso-8859-1
                         <div id="header">
                                         <div class="inner">
                                                 <header>
-                                                        <h1><a href="http://cgeb-imr.ca/" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
+                                                        <h1><a href="http://integrated-microbiome-resource.com/" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
                                                 </header>
                                         </div>
                                         <nav id="nav">
                                                 <ul>
-                                                        <li><a href="http://cgeb-imr.ca/index.html">Home</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/about.html">About Us</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/achieve.html">Achievements</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/submissions.html">Submission Guidelines</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/queue.html">Real-Time Queue</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/pricing.html">Pricing</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/protocols.html">Protocols</a></li>
-                                                        <li><a href="http://cgeb-imr.ca/contact.html">Contact Us</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/index.html">Home</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/about.html">About Us</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/achieve.html">Achievements</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/submissions.html">Submission Guidelines</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/queue.html">Real-Time Queue</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/pricing.html">Pricing</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/protocols.html">Protocols</a></li>
+                                                        <li><a href="http://integrated-microbiome-resource.com/contact.html">Contact Us</a></li>
                                                 </ul>
                                         </nav>
 
@@ -73,7 +73,7 @@ Content-Type: text/html; charset=iso-8859-1
                                                         <h2>Payment Details Error</h2>
                                                 </header>
                                                 <section>
-                                                        <p><font color="red">Your submitted information has generated an error! Please verify the below requirements, then return to the <a href="http://payment.cgeb-imr.ca">Payment Info Page</a> to retry.
+                                                        <p><font color="red">Your submitted information has generated an error! Please verify the below requirements, then return to the <a href="http://payments.integrated-microbiome-resource.com">Payment Info Page</a> to retry.
                                                         <p><b>Client Name: <font color="red">Must only be ASCII characters and not blank!</font></b>
 							<p><b>Client Email: <font color="red">Must be well formed email and not blank!</font></b>
                                                         <p><b>Invoice Number: <font color="red">Numbers plus (optionally) one letter only, no spaces - up to four (4) characters are allowed!</font></b>
@@ -110,9 +110,6 @@ my $trnAmount = param('amount');
 #  Required extra parameters
 my $merchant_id = "117687525";  
 my $hash_key = ""; # Take from configuration interface
-#my $x_currency_code = "CAD"; # Needs to agree with the currency of the payment page
-#my $x_fp_sequence = int(rand 5000) + 1000;
-#my $x_fp_timestamp = time; #  needs to be in UTC. Make sure webserver produces UTC
 
 #  The values that contribute to sha1 hash
 # Note: the hash key is simply appended to the end of the string before being hashed
@@ -146,19 +143,19 @@ Content-Type: text/html; charset=iso-8859-1
 			<div id="header">
 					<div class="inner">
 						<header>
-							<h1><a href="http://cgeb-imr.ca/" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
+							<h1><a href="http://integrated-microbiome-resource.com/" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
 						</header>
 					</div>
 					<nav id="nav">
 						<ul>
-							<li><a href="http://cgeb-imr.ca/index.html">Home</a></li>
-							<li><a href="http://cgeb-imr.ca/about.html">About Us</a></li>
-							<li><a href="http://cgeb-imr.ca/achieve.html">Achievements</a></li>
-							<li><a href="http://cgeb-imr.ca/submissions.html">Submission Guidelines</a></li>
-							<li><a href="http://cgeb-imr.ca/queue.html">Real-Time Queue</a></li>
-							<li><a href="http://cgeb-imr.ca/pricing.html">Pricing</a></li>
-							<li><a href="http://cgeb-imr.ca/protocols.html">Protocols</a></li>
-							<li><a href="http://cgeb-imr.ca/contact.html">Contact Us</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/index.html">Home</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/about.html">About Us</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/achieve.html">Achievements</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/submissions.html">Submission Guidelines</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/queue.html">Real-Time Queue</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/pricing.html">Pricing</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/protocols.html">Protocols</a></li>
+							<li><a href="http://integrated-microbiome-resource.com/contact.html">Contact Us</a></li>
 						</ul>
 					</nav>
 
@@ -170,7 +167,7 @@ Content-Type: text/html; charset=iso-8859-1
 							<h2>Confirm Payment Details</h2>
 						</header>
 						<section>
-							<p>Please confirm your submitted information below and click <b>Proceed to Checkout</b> - you will then be taken to our secure payment site. If you need to change the submitted values, return to the <a href="http://payment.cgeb-imr.ca/">Payment Input</a> page.
+							<p>Please confirm your submitted information below and click <b>Proceed to Checkout</b> - you will then be taken to our secure payment site. If you need to change the submitted values, return to the <a href="http://payments.integrated-microbiome-resource.com/">Payment Input</a> page.
 							<p><b>Client Name: $ordName</b>
 							<p><b>Email: $ordEmailAddress</b>
 							<br><br><b>Invoice #: $trnOrderNumber</b>
@@ -195,7 +192,7 @@ Content-Type: text/html; charset=iso-8859-1
 			<div id="footer">
 								<div class="copyright">
 									<ul class="menu">
-										<li>&copy; CGEB-IMR (2014+). All rights reserved.</li><li>Design template: <a href="http://html5up.net" target="new">HTML5 UP</a></li>
+										<li>&copy; IMR (2019+). All rights reserved.</li><li>Design template: <a href="http://html5up.net" target="new">HTML5 UP</a></li>
 									</ul>
 								</div>
 							
